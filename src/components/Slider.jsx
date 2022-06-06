@@ -44,7 +44,8 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-  height: 100%;
+  height: 80%;
+  width: 100%;
 `;
 
 const InfoContainer = styled.div`
@@ -52,7 +53,17 @@ const InfoContainer = styled.div`
   padding: 50px;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  font-size: 70px;
+`;
+const Desc = styled.p`
+  margin: 50px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 3px;
+`;
+
+const Button = styled.button``;
 
 const Slider = () => {
   return (
@@ -65,7 +76,13 @@ const Slider = () => {
           <ImgContainer>
             <Image src="./assets/clothes.jpg" />
           </ImgContainer>
-          <InfoContainer></InfoContainer>
+          <InfoContainer>
+            <Title>SUMMER SALE</Title>
+            <Desc>
+              DON'T COMPROMISE ON STYLE! GET 30% OFF FOR NEW ARRIVALS.
+            </Desc>
+            <Button>SHOP NOW</Button>
+          </InfoContainer>
         </Slide>
       </Wrapper>
       <Arrow direction="right">
