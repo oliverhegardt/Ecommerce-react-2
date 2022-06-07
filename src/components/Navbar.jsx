@@ -31,6 +31,7 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
+  border-radius: 25px;
 `;
 
 const Input = styled.input`
