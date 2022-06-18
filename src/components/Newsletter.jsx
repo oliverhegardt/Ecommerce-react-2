@@ -4,8 +4,10 @@ const Newsletter = () => {
     return (
         <Container>
             <Title></Title>
-            <Description></Description>
-            <InputContainer></InputContainer>
+            <Desc></Desc>
+            <InputContainer>
+                <Input />
+            </InputContainer>
         </Container>
     );
 };
