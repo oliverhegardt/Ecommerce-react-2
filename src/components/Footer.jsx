@@ -1,4 +1,12 @@
-import { Facebook, Instagram, Pinterest, Twitter } from "@material-ui/icons";
+import {
+    Facebook,
+    Instagram,
+    MailOutline,
+    Phone,
+    Pinterest,
+    Room,
+    Twitter,
+} from "@material-ui/icons";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -58,6 +66,10 @@ const Right = styled.div`
     padding: 20px;
 `;
 
+const ContactItem = styled.div``;
+
+const Payment = styled.img``;
+
 const Footer = () => {
     return (
         <Container>
@@ -102,7 +114,18 @@ const Footer = () => {
             </Center>
             <Right>
                 <Title>Contact</Title>
-                <ContactItem></ContactItem>
+                <ContactItem>
+                    <Room />
+                    622 Dixie Path , South Tobinchester 98336
+                </ContactItem>
+                <ContactItem>
+                    <Phone /> +1 234 56 78
+                </ContactItem>
+                <ContactItem>
+                    <MailOutline />
+                    oliver.hegardt@gmail.com
+                </ContactItem>
+                <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
             </Right>
         </Container>
     );
