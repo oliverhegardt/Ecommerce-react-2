@@ -66,9 +66,15 @@ const Right = styled.div`
     padding: 20px;
 `;
 
-const ContactItem = styled.div``;
+const ContactItem = styled.div`
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+`;
 
-const Payment = styled.img``;
+const Payment = styled.img`
+    width: 50%;
+`;
 
 const Footer = () => {
     return (
@@ -115,14 +121,14 @@ const Footer = () => {
             <Right>
                 <Title>Contact</Title>
                 <ContactItem>
-                    <Room />
+                    <Room style={{ marginRight: "10px" }} />
                     622 Dixie Path , South Tobinchester 98336
                 </ContactItem>
                 <ContactItem>
-                    <Phone /> +1 234 56 78
+                    <Phone style={{ marginRight: "10px" }} /> +1 234 56 78
                 </ContactItem>
                 <ContactItem>
-                    <MailOutline />
+                    <MailOutline style={{ marginRight: "10px" }} />
                     oliver.hegardt@gmail.com
                 </ContactItem>
                 <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
