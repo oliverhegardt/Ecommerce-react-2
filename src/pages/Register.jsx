@@ -35,7 +35,7 @@ const Form = styled.form`
 
 const Input = styled.input`
     flex: 1;
-    min-width: 40%;
+    min-width: 45%;
     margin: 20px 10px 0px 0px;
     padding: 10px;
     border-radius: 10px;
@@ -62,6 +62,7 @@ const Button = styled.button`
     padding: 15px 0px;
     background-color: teal;
     color: white;
+    cursor: pointer;
 `;
 
 const Register = () => {
