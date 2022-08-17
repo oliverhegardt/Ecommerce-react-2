@@ -30,23 +30,38 @@ const Title = styled.h1`
 
 const Form = styled.form`
     display: flex;
+    flex-wrap: wrap;
 `;
 
 const Input = styled.input`
-    margin-bottom: 10px;
-    padding: 5px 5px;
-    width: 15vw;
+    flex: 1;
+    min-width: 40%;
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
     border-radius: 10px;
+    border-width: 1px;
 `;
 
 const Agreement = styled.span`
-    margin-bottom: 10px;
+    font-size: 12px;
+    margin: 20px 0px;
+`;
+
+const ButtonContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 const Button = styled.button`
-    margin-bottom: 10px;
     border-radius: 10px;
-    padding: 5px 5px;
+    width: 20%;
+    border: none;
+    padding: 15px 0px;
+    background-color: teal;
+    color: white;
 `;
 
 const Register = () => {
@@ -63,10 +78,12 @@ const Register = () => {
                     <Input placeholder="Confirm Password" />
                     <Agreement>
                         By creating an account, I consent to the processing of
-                        my personal data in accordance with the
+                        my personal data in accordance with the{" "}
                         <b>PRIVACY POLICY</b>
                     </Agreement>
-                    <Button>CREATE</Button>
+                    <ButtonContainer>
+                        <Button>CREATE</Button>
+                    </ButtonContainer>
                 </Form>
             </Wrapper>
         </Container>
