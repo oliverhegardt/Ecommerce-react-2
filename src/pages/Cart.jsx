@@ -93,9 +93,24 @@ const PriceDetail = styled.div`
 const ProductAmountContainer = styled.div`
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 `;
 
-const ProductAmount = styled.span``;
+const ProductAmount = styled.span`
+    font-size: 24px;
+    margin: 5px;
+`;
+
+const ProductPrice = styled.span`
+    font-size: 30px;
+    font-weight: 200;
+`;
+
+const Hr = styled.hr`
+    background-color: #eee;
+    border: none;
+    height: 1px;
+`;
 
 const Summary = styled.div`
     flex: 1;
@@ -141,6 +156,34 @@ const Cart = () => {
                                     <ProductAmount>2</ProductAmount>
                                     <Remove />
                                 </ProductAmountContainer>
+                                <ProductPrice>$ 30</ProductPrice>
+                            </PriceDetail>
+                        </Product>
+                        <Hr />
+                        <Product>
+                            <ProductDetail>
+                                <Image src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" />
+                                <Details>
+                                    <ProductName>
+                                        <b>Product:</b> JESSIE THUNDER SHOES
+                                    </ProductName>
+                                    <ProductId>
+                                        <b>ID:</b> 37954105983
+                                    </ProductId>
+                                    <ProductColor color="black" />
+
+                                    <ProductSize>
+                                        <b>Size:</b> 44
+                                    </ProductSize>
+                                </Details>
+                            </ProductDetail>
+                            <PriceDetail>
+                                <ProductAmountContainer>
+                                    <Add />
+                                    <ProductAmount>2</ProductAmount>
+                                    <Remove />
+                                </ProductAmountContainer>
+                                <ProductPrice>$ 30</ProductPrice>
                             </PriceDetail>
                         </Product>
                     </Info>
