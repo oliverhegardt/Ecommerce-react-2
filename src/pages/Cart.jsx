@@ -47,15 +47,43 @@ const Info = styled.div`
     flex: 3;
 `;
 
-const Product = styled.div``;
-const ProductDetail = styled.div``;
-const Image = styled.img``;
-const Details = styled.div``;
+const Product = styled.div`
+    display: flex;
+    justify-content: space-between;
+`;
+
+const ProductDetail = styled.div`
+    flex: 2;
+    display: flex;
+`;
+
+const Image = styled.img`
+    width: 200px;
+`;
+
+const Details = styled.div`
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+`;
+
 const ProductName = styled.span``;
+
 const ProductId = styled.span``;
-const ProductColor = styled.img``;
+
+const ProductColor = styled.img`
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: ${(props) => props.color};
+`;
+
 const ProductSize = styled.span``;
-const PriceDetail = styled.div``;
+
+const PriceDetail = styled.div`
+    flex: 1;
+`;
 
 const Summary = styled.div`
     flex: 1;
@@ -88,7 +116,7 @@ const Cart = () => {
                                     <ProductId>
                                         <b>ID:</b> 37954105983
                                     </ProductId>
-                                    <ProductColor />
+                                    <ProductColor color="black" />
 
                                     <ProductSize>
                                         <b>Size:</b> 44
