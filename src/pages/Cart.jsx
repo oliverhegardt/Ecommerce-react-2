@@ -153,10 +153,10 @@ const Cart = () => {
                             <PriceDetail>
                                 <ProductAmountContainer>
                                     <Add />
-                                    <ProductAmount>2</ProductAmount>
+                                    <ProductAmount>1</ProductAmount>
                                     <Remove />
                                 </ProductAmountContainer>
-                                <ProductPrice>$ 30</ProductPrice>
+                                <ProductPrice>$ 200</ProductPrice>
                             </PriceDetail>
                         </Product>
                         <Hr />
@@ -165,15 +165,15 @@ const Cart = () => {
                                 <Image src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png" />
                                 <Details>
                                     <ProductName>
-                                        <b>Product:</b> JESSIE THUNDER SHOES
+                                        <b>Product:</b> HAKURA T-SHIRT
                                     </ProductName>
                                     <ProductId>
-                                        <b>ID:</b> 37954105983
+                                        <b>ID:</b> 58954105983
                                     </ProductId>
-                                    <ProductColor color="black" />
+                                    <ProductColor color="gray" />
 
                                     <ProductSize>
-                                        <b>Size:</b> 44
+                                        <b>Size:</b> XL
                                     </ProductSize>
                                 </Details>
                             </ProductDetail>
@@ -183,11 +183,17 @@ const Cart = () => {
                                     <ProductAmount>2</ProductAmount>
                                     <Remove />
                                 </ProductAmountContainer>
-                                <ProductPrice>$ 30</ProductPrice>
+                                <ProductPrice>$ 50</ProductPrice>
                             </PriceDetail>
                         </Product>
                     </Info>
-                    <Summary>summary</Summary>
+                    <Summary>
+                        <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+                        <SummaryItem>
+                            <SummaryItemText>Subtotal</SummaryItemText>
+                            <SummaryItemPrice>$ 80</SummaryItemPrice>
+                        </SummaryItem>
+                    </Summary>
                 </Bottom>
             </Wrapper>
 
