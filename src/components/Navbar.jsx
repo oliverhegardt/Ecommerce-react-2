@@ -57,13 +57,15 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    ${mobile({ justifyContent: "center" })}
+    ${mobile({ flex: 2, justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+
+    ${mobile({ fontSize: "12px", marginLeft: "12px" })}
 `;
 
 const Navbar = () => {
