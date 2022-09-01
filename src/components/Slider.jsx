@@ -10,7 +10,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     overflow: hidden;
-    ${mobile({ fontSize: "24px" })}
+    ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
@@ -53,8 +53,9 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-    height: 80%;
-    /* width: 100%; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 `;
 
 const InfoContainer = styled.div`
